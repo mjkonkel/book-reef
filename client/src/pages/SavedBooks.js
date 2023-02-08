@@ -20,7 +20,8 @@ const SavedBooks = () => {
           return false;
         }
 
-        const response = await getMe(token);
+        // const response = await getMe(token);
+        
 
         if (!response.ok) {
           throw new Error('something went wrong!');
