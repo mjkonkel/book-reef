@@ -63,7 +63,7 @@ console.log('test2')
 
     try {
       const { data } = await saveBook({
-        variables: { bookData: {...bookToSave} }
+        variables: { bookInfo: {...bookToSave} }
       });
 
       if (error) {

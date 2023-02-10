@@ -31,7 +31,7 @@ const SavedBooks = () => {
   //       }
 
   //       const response = await getMe(token);
-        
+
 
   //       if (!response.ok) {
   //         throw new Error('something went wrong!');
@@ -49,7 +49,7 @@ const SavedBooks = () => {
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   console.log(userData)
-  
+
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
