@@ -53,7 +53,7 @@ const SearchBooks = () => {
     console.log('test1')
     // find the book in `searchedBooks` state by the matching id
     const bookToSave = searchedBooks.find((book) => book.bookId === bookId);
-console.log('test2')
+    console.log('test2')
     // get token
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
@@ -63,7 +63,7 @@ console.log('test2')
 
     try {
       const { data } = await saveBook({
-        variables: { bookInfo: {...bookToSave} }
+        variables: { bookInfo: { ...bookToSave } }
       });
 
       if (error) {
